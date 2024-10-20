@@ -22,5 +22,11 @@ First, install the `pytube` package by running the following command in your ter
 
 ```bash
 pip3 install pytube
+```
 
+## Step 3: Run the script
+Make sure you are in the correct folder
 
+```bash
+python3 browser_automation.py
+```
