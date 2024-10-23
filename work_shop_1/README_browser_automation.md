@@ -34,14 +34,14 @@ It is recommended to use a virtual environment to avoid conflicts with your syst
    cd introduce_python
 3. Install the required Python packages using pip:
    ```bash
-   pip install playwright
+   pip3 install playwright
 4. Install browser dependencies for Playwright:
    ```bash
-   python -m playwright install
+   python3 -m playwright install
 
 ### Running the Script
 1. Ensure you are in the repository directory where the Python script (script.py) is located.
 2. Run the Python script:
    ```bash
-   python browser_automation.py
+   python3 browser_automation.py
    ```
