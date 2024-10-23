@@ -14,7 +14,11 @@ It is recommended to use a virtual environment to avoid conflicts with your syst
 
    ```bash
    python3 -m venv myenv
+   ```
+   optional for the mac
+   ```bash
    source myenv/bin/activate
+   ```
 
 ## Step 2: Install `pytube`
 
@@ -28,5 +32,5 @@ pip3 install pytube
 Make sure you are in the correct folder
 
 ```bash
-python3 browser_automation.py
+python3 download_video.py
 ```
