@@ -32,12 +32,19 @@ It is recommended to use a virtual environment to avoid conflicts with your syst
 2. Navigate to the cloned repository directory:
    ```bash
    cd introduce_python
-3. Install the required Python packages using pip:
+   ```
+3. Navigate to the work_shop_1 folder
+   ```bash
+   cd work_shop_1
+   ```
+4. Install the required Python packages using pip:
    ```bash
    pip3 install playwright
-4. Install browser dependencies for Playwright:
+   ```
+5. Install browser dependencies for Playwright:
    ```bash
    python3 -m playwright install
+   ```
 
 ### Running the Script
 1. Ensure you are in the repository directory where the Python script (script.py) is located.
