@@ -1,8 +1,9 @@
-user_input = input('Please enter how many numbers you going to enter: ')
+INPUT_STRING = 'Please enter how many numbers you going to enter: '
+user_input = input(INPUT_STRING)
 
 while not user_input.isdecimal():
     print('The text you entered is not a number! ')
-    user_input = input('Please enter how many numbers you going to enter:')
+    user_input = input(INPUT_STRING)
 
 numbers_count = int(user_input)
 numbers = []
