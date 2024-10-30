@@ -33,9 +33,11 @@ if (total_number > 0):
     for i in range(total_number):
         numbers.append(get_valid_number())
 
+    # Find max and min value
     max_value = max(numbers)
     min_value = min(numbers)
 
+    # Find max and min position
     max_positions = []
     min_positions =[]
     for index in range(len(numbers)):
