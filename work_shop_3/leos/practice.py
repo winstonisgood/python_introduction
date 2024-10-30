@@ -27,6 +27,8 @@ max_number = numbers[0]
 min_number = numbers[0]
 max_index = [0]
 min_index = [0]
+# 
+# 
 for i in range(1, len(numbers)):
     if numbers[i] > max_number:
         max_number = numbers[i]
