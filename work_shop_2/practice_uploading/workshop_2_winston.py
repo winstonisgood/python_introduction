@@ -35,7 +35,3 @@ if (total_number > 0):
     print(f'The min number is {min(numbers)} and position at {numbers.index(min(numbers))}')
     print(f'The total is {sum(numbers)}')
     print(f'The average number is {sum(numbers) / len(numbers)}')
-
-    
-
-
