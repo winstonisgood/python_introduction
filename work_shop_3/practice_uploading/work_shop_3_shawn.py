@@ -39,7 +39,7 @@ if (total_number > 0):
 
     # Find max and min position
     max_positions = []
-    min_positions =[]
+    min_positions = []
     for index in range(len(numbers)):
         if numbers[index] == max_value:
             max_positions.append(index)
