@@ -16,17 +16,23 @@ for i in range(numbers_count):
         except ValueError:
             print('The text you entered is illegal!')
 
+# edge case only one element in array
 max_number = numbers[0]
 min_number = numbers[0]
 max_index = [0]
 min_index = [0]
+
+# normal case
 for i in range(1, len(numbers)):
+    # check the large number
     if numbers[i] > max_number:
         max_number = numbers[i]
         max_index = [i]
     elif numbers[i] == max_number:
         max_index.append(i)
+    # check the min number
     if numbers[i] < min_number:
+        # if the new min value found, reset the min value and positions
         min_number = numbers[i]
         min_index = [i]
     elif numbers[i] == min_number:
