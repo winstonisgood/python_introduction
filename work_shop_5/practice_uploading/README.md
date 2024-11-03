@@ -1,2 +1,2 @@
 # uploading format
-workshop_5_{your_name}
+create a folder named workshop_5_{your_name} and add your practice into the folder
