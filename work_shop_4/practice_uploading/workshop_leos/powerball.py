@@ -1,17 +1,18 @@
 import random
 
-def picknumbers(poolsize, ballnum):
-    pool=list(range(1,poolsize+1))
-    i=1 
-    pickedball=[]
-    while i <= ballnum:
+def pick_numbers(pool_size, ball_num):
+    pool = list(range(1, pool_size + 1))
+    i = 1 
+    picked_ball = []
+    while i <= ball_num:
         random.shuffle(pool)
-        last_num=pool.pop()
-        pickedball.append(last_num)
-        i+=1
-    return(pickedball)
+        print(pool)
+        last_num = pool.pop()
+        picked_ball.append(last_num)
+        i += 1
+    return(picked_ball)
 
-print(picknumbers(35,7),picknumbers(20,1))
+print(pick_numbers(35, 7), pick_numbers(20, 1))
 
 
 

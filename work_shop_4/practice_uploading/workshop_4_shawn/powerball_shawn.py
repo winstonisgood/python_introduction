@@ -5,6 +5,8 @@ def picknumbers(poolsize, ballnum):
     numbers = list(range(1, poolsize + 1))
     #Shuffle
     random.shuffle(numbers)
+    # return numbers[-ballnum:]
+    print(numbers)
     #Initialize winning list
     winning_numbers = []
     #set a condition to pop the number from shuffled number list and append to winning_numbers
