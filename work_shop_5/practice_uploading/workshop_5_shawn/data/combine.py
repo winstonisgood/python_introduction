@@ -23,15 +23,16 @@ def insert_lines(lines_a, lines_b):
             combined_lines.append(lines_a[i])
         if i < len(lines_b):
             combined_lines.append(lines_b[i])
+    return '\n'.join(combined_lines)
 
-    final_combined_lines = []
-    for i in range(len(combined_lines)):
-        if i % 2 == 0 and i // 2 < len(lines_a):
-            final_combined_lines.append(lines_a[i // 2])
-        elif i % 2 == 1 and i // 2 < len(lines_b):
-            final_combined_lines.append(lines_b[i // 2])
-
-    return '\n'.join(final_combined_lines)
+    # final_combined_lines = []
+    # for i in range(len(combined_lines)):
+    #     if i % 2 == 0 and i // 2 < len(lines_a):
+    #         final_combined_lines.append(lines_a[i // 2])
+    #     elif i % 2 == 1 and i // 2 < len(lines_b):
+    #         final_combined_lines.append(lines_b[i // 2])
+    #
+    # return '\n'.join(final_combined_lines)
 
 
 #Write the combined content to the output file
