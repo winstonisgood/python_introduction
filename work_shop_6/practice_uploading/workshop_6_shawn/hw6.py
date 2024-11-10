@@ -6,7 +6,7 @@ class Book:
         self._borrowed =  False
 
     def __str__(self):
-        return f"{self.title} by {self.author} -Price: {self.price}"
+        return f"{self._title} by {self._author} -Price: {self._price}"
 
 
 class Novel (Book):
@@ -17,8 +17,11 @@ class Novel (Book):
     def __str__(self):
         return f"{super().__str__()} -Genre: {self.genre}"
 
+    def get_title(self):
+        return self._title
+
 novel = Novel("The Da Vinci Code", "Dan Brown", 24.50, "Mystery")
-print(novel.title)
+print(novel.get_title())
 print(novel.genre)
 print("-----------------------------")
 
@@ -40,18 +43,18 @@ class BookShelf:
     def search_books(self, title):
         # store books in list
         for book in self.books:
-            if title.lower() in book.title.lower():
+            if title.lower() in book._title.lower():
                 return str(book)
         return "Book not found"
 
     def borrow_book(self, title):
         # consider multiply books with the same title
         for book in self.books:
-            if book.title.lower() == title.lower() and not book.borrowed:
-                book.borrowed = True
-                return f"You borrowed {book.title}"
-            elif book.title.lower() == title.lower() and book.borrowed:
-                return f" {book.title}is already borrowed"
+            if book._title.lower() == title.lower() and not book._borrowed:
+                book._borrowed = True
+                return f"You borrowed {book._title}"
+            elif book._title.lower() == title.lower() and book._borrowed:
+                return f" {book._title}is already borrowed"
 
         return "Not found"
 
