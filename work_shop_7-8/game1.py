@@ -44,6 +44,7 @@ def update():
     if p3.imageindex >= len(p3.images):
         p3.imageindex = 0
     if keyboard.space:
+        sounds.jump.play()
         p3.velocity_y = -20
     
     p3.y += p3.velocity_y
@@ -67,6 +68,7 @@ def update():
     for obstacle in obstacles:
         obstacle.x -= 5
         if obstacle.x < -50 and not game_over:
+            sounds.point.play()
             obstacles.remove(obstacle)
             score += 1
             print(f'Score: {score}')
@@ -76,6 +78,7 @@ def update():
     # if not collide, -1 will be returned
     if p3.collidelist(obstacles) != -1:
         game_over = True
+        sounds.die.play()
         print('Game Over')
 
 pgzrun.go() # Must be last line
