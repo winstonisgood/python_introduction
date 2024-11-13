@@ -72,11 +72,11 @@ def update():
         
 
     # Update and check collisions for obstacles
-    for obstacle in obstacles[:]:  # Use a copy to allow safe removal
+    for obstacle in obstacles:  # Use a copy to allow safe removal
         obstacle.x -= 4  # Move obstacle leftward
         if p3.colliderect(obstacle):
-            game_over = True  
-            die_sound.play()  
+            game_over = True
+            die_sound.play()
             return
 
         # Remove obstacles that are off the screen
