@@ -10,7 +10,7 @@ def aggregate_logs(log_directory):
             logs = file.read()
             all_logs.append(logs)
             # filter out the log that show the error 500
-    
+
     return '\n'.join(all_logs)
 
 # Example usage
